@@ -10,13 +10,3 @@ Cualquier contribución sin ninguna duda es bien recibida.
 
 1. [aws](https://github.com/jadegbonp/only-terraform/tree/main/aws)
    1. [hello-world](https://github.com/jadegbonp/only-terraform/tree/main/aws/hello-world)
-     
-
-
-
-
-
-
-
-
-

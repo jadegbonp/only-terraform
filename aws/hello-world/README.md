@@ -22,15 +22,6 @@ Son las entradas que son definidas en la plantilla:
 | instance_type | t3.micro (default) | Tipo de Instancia que se creara |
 | spot_price | 0.03 (default) | Valor de solicitud de instancia Spot |
 
-
-### Salidas
-Son las salidas que se generarán al finalizar la ejecución de la plantilla.
-
-| Variable | Descripción |
-| -- | -- |
-| instance_public_ip | IP publica de la instancia Spot |
-| instance_public_dns | DNS publico de la instancia Spot |
-
 ### Ejecución
 Se debe ejecutar los siguientes comandos:
 ```
