@@ -4,7 +4,7 @@ provider "aws" {
 }
 /*variables*/
 locals {
-    vars = "${map(
+    vars = "${tomap(
         "instance_type", "t3.micro",
         "spot_price", "0.03"
     )}"
