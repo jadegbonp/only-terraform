@@ -31,11 +31,11 @@ pipeline {
 
         stage('Plan') {
             steps {
-                sh 'pwd;cd aws/hello-world/ ;terraform init -input=false'
-                sh 'pwd;cd aws/hello-world/ ;terraform workspace new ${environment}'
-                sh 'pwd;cd aws/hello-world/ ;terraform workspace select ${environment}'
-                sh "pwd;cd aws/hello-world/ ;terraform plan -input=false -out tfplan"
-                sh 'pwd;cd aws/hello-world/ ;terraform show -no-color tfplan > tfplan.txt'
+                sh 'pwd;cd terraform/aws/hello-world ;terraform init -input=false'
+                sh 'pwd;cd terraform/aws/hello-world ;terraform workspace new ${environment}'
+                sh 'pwd;cd terraform/aws/hello-world ;terraform workspace select ${environment}'
+                sh "pwd;cd terraform/aws/hello-world ;terraform plan -input=false -out tfplan"
+                sh 'pwd;cd terraform/aws/hello-world ;terraform show -no-color tfplan > tfplan.txt'
             }
         }
         stage('Approval') {
