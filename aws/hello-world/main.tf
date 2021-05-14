@@ -4,10 +4,10 @@ provider "aws" {
 }
 /*variables*/
 locals {
-    vars = "${tomap(
-        "instance_type", "t3.micro",
-        "spot_price", "0.03"
-    )}"
+    vars = tomap({
+      "instance_type" = "t3.micro"
+      "spot_price" = "0.03"
+    )}
 }
 
 /*Consulta de amis para la region del usuario*/
